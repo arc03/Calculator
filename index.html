@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sum</title>
+    <link rel="stylesheet" href="./index.css">
+    <h1 style="text-align: center; text-decoration: rgb(233, 170, 10);">CALCULATOR </h1>
+</head>
+<body style="background-color: rgba(77, 107, 241, 0.747);">
+    <nav>
+        <h1 style="color: rgb(240, 231, 255); text-align: center;"><b>🧮 Adding Two Numbers 🧮</b></h1>
+    </nav>
+    <form class="sumform" onsubmit="add()">
+        <input type="number" id="a" placeholder="Enter first num">
+        <input type="number" id="b" placeholder="Enter second num">
+        <button style="font-family: 'Orbitron', sans-serif;
+        background-color: #4ce647 ;
+        border: solid rgb(26, 11, 11) 0.5px;
+        color: black;
+        border-radius: 5px;
+        width: 40%;
+        text-align-last: center;
+        height: 50%; float: right;" type="submit">Submit:-</button> 
+    </form>
+    <p style = "background-color: deepskyblue; padding: 50px; text-align: center; display: none"  id= "ans">Sum: <input id="answer" /></p>
+    <script>
+        function add(){
+            event.preventDefault()
+            let a = parseFloat(document.getElementById("a").value);
+            let b = parseFloat(document.getElementById("b").value);
+            console.log(a);
+            console.log(b);
+            console.log(typeof(a + b));
+            document.getElementById("answer").value = a + b;
+            document.getElementById("ans").style.display = "block"
+        }
+    </script>
+    <nav>
+        <p>
+            <h4 style="font-weight: 300; float: left;">Developed with 💗 by </h4>
+            <a style="color: rgb(78, 0, 61); float: right; " href="https://github.com/arc03" id="foot"><h4>Archita Sharda</h4></a>
+        </p>
+    </nav>
+</body>
+</html>

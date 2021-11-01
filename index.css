@@ -1,0 +1,26 @@
+.sumform{
+    flex: content;
+    align-items: center;
+}
+
+.sumform {
+    background-color: rgb(189, 39, 176);
+    margin: 50px;
+    padding: 50px;
+}
+
+navbar {
+    position: absolute;
+    padding: 10px;
+    display: table;
+    text-align: center;
+    margin-right: 25%;
+    margin-left: 25%;
+    top: 0;
+}
+
+@media only screen and (max-width:400px) {
+    * {
+        text-align: center;
+    }
+}
